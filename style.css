@@ -1,0 +1,416 @@
+#titlepage{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#welcome{
+  font-size: 25px;
+  color: #150b4b;
+  margin-bottom: 10px;
+}
+
+p{
+  font-family: Rowdies, Arial, sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+  color:#471f07;
+  font-size: 19px;
+  align-items: center;
+}
+
+body{
+  background-image: url(imgs/bg1.png); /*Photo from Eric Barone, developer of Stardew Valley*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 108px;
+  background: linear-gradient(to bottom, #150b4b 0%, #150b4b00 100%);
+
+  padding-top: 10px;
+}
+
+.title{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav{
+  display:flex;
+  flex-direction: row;
+  max-width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navbutton{
+  width: 125px;
+  height: 50px;
+  margin: 0;
+}
+
+.navbutton:hover{
+  scale: 1.1;
+}
+
+.navbutton:active{
+  opacity: 0.7;
+}
+
+#footer{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footertxt{
+  color: white;
+  font-size: 17px;
+  opacity: 0.7;
+}
+
+.contentborder{
+  display:flex;
+  flex-direction: column;
+  max-width: 650px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-color: #e27a3a;
+  border-width: 10px;
+  border-style: groove;
+  background-color: #fcc679;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 15px;
+}
+
+.label{
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+}
+
+.firstrow{
+  line-height: 30px;
+}
+
+hr{
+  border: none;
+  height: 5px;
+  background-color: #e27a3a;
+  margin: 0 auto;
+}
+
+.labelbg{
+  display: flex;
+  background-image: url(imgs/labelbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 690px;
+  height: 100px;
+  margin-top: 115px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+        /*homepage*/
+
+.self{
+  display: flex;
+  flex-direction: row;
+}
+
+.avatar{
+  margin-top: 15px;
+  margin-right: 12px;
+  margin-bottom: 5px;
+
+  background-image: url(imgs/avatarnght.png); /*Background image from Eric Barone, developer of Stardew Valley*/
+  background-repeat: no-repeat;
+  height: 268px;
+  width: 150px;
+  object-fit: cover;
+  
+  border-color: #e27a3a;
+  border-width: 6px;
+  border-style: inset;
+  border-radius: 5px;
+}
+
+#avatarimg{
+  height: 268px;
+  width: 150px;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+#avatarimg:hover{
+  opacity: 0;
+}
+
+#skillbar{
+  margin-top: 15px;
+  margin-left: 8px;
+}
+
+#name{
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.info{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 25px;
+
+  border-color: #e27a3a;
+  border-width: 6px;
+  border-style: inset;
+  border-radius: 5px;
+
+  margin-left: 33px;
+  margin-right: 33px;
+  margin-top: 5px;
+  max-width: 575px;
+}
+
+.basicinfo{
+  display: grid;
+  grid-template-columns: 280px 280px;
+  max-width: 575px;
+  margin-bottom: 10px;
+}
+
+.grid{
+  padding: 10px;
+  border-bottom: 5px solid #e27a3a;
+}
+
+#descbox{
+  padding: 10px;
+}
+#desc{
+  text-align: justify;
+}
+
+.bold{
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+#socials{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.socmed{
+  width: 50px;
+  border-color: #e27a3a;
+  border-width: 3px;
+  border-style: groove;
+  border-radius: 25px;
+  transition: opacity 0.3s;
+
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.socmed:hover{
+  scale: 1.1;
+}
+
+.socmed:active{
+  opacity: 0.3;
+}
+
+#infographic{
+  width: 569px;
+  border-color: #e27a3a;
+  border-width: 6px;
+  border-style: inset;
+  border-radius: 5px;
+}
+
+        /*blog*/
+
+#blogentries{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.blogborder, .highlightborder{
+  display: grid;
+  grid-template-columns:350px 220px;
+  align-items: center;
+  padding: 0;
+
+  border-color: #f19963;
+  border-width: 4px;
+  border-style: inset;
+  border-radius: 7px;
+
+  width: 575px;
+  margin: 3px;
+}
+
+.blogborder:hover{
+  background-color: #f4b75e;
+}
+
+.blog{
+  margin: 5px;
+  border-color: #e27a3a;
+  border-width: 4px;
+  border-style: ridge;
+  border-radius: 7px;
+
+  width: 200px;
+}
+
+.blogdesc{
+  margin: 5px;
+  text-align: center;
+}
+
+.highlightborder{
+  transition: box-shadow 0.5s
+}
+
+.highlightborder:hover{
+  background-color: #f4b75e;
+  box-shadow: 0 0 10px 10px white;
+}
+
+        /*flex*/
+
+.flexacademics{
+  display: grid;
+  grid-template-columns: 185px 185px 185px;
+  column-gap: 5px;
+}
+
+.flexborder{
+  display: grid;
+  grid-template-rows: 170px 180px;
+  padding: 0;
+
+  border-color: #f19963;
+  border-width: 3px;
+  border-style: inset;
+  border-radius: 7px;
+
+  width: 180px;
+  margin: 3px;
+}
+
+.flexborder:hover{
+  background-color: #f4b75e;
+}
+
+.flex{
+  margin: 5px;
+  border-color: #e27a3a;
+  border-width: 4px;
+  border-style: ridge;
+  border-radius: 7px;
+
+  width: 160px;
+}
+
+.flextext{
+  font-size: 16px;
+}
+
+.flexdesc{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.flexlabel{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.flexartwork{
+  display: grid;
+  grid-template-columns: 287px 287px;
+  padding: 6px;
+  place-items: center;
+
+  border-color: #f19963;
+  border-width: 4px;
+  border-style: inset;
+  border-radius: 7px;
+
+  max-width: 565px;
+}
+
+.artborder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 3px;
+}
+
+.flexart{
+  width: 250px;
+  border-color: #e27a3a;
+  border-width: 4px;
+  border-style: ridge;
+  border-radius: 7px;
+}
+
+#artlabel{
+  text-align: center;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
